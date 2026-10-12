@@ -1,0 +1,24 @@
+[project]
+name = "try-model"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ashitaka-Laputa-IV", email = "Ashitaka-Laputa-IV@outlook.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.4",
+    "langchain-core>=1.6.9",
+    "langchain-openai>=1.7.0",
+    "langgraph>=1.2.14",
+    "prompt-toolkit>=3.0.53",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+try-model = "try_model:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
